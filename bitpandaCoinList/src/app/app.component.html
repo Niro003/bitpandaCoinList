@@ -1,0 +1,12 @@
+<h1>Coinlist</h1>
+<mat-list>
+  <ng-container *ngFor="let coin of coinlist">
+    <mat-list-item (click)="startDialogProcess(coin.id)">
+      <h3 matLine> {{coin.name}} </h3>
+      <p matLine>
+        <span> {{coin.symbol}} </span>
+      </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </ng-container>
+</mat-list>
